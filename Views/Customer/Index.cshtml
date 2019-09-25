@@ -1,0 +1,17 @@
+﻿@model IEnumerable<Vlidly.Models.Customer>
+@{
+    ViewBag.Title = "Customer";
+}
+
+<h2>Customer</h2>
+<table>
+
+    @foreach (var c in Model)
+    {
+        <tr>
+            <td> @c.Name</td>
+        </tr>
+    }
+
+
+</table>
